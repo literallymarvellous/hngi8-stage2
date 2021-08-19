@@ -1,0 +1,162 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+h2 {
+  margin: 1rem auto;
+  line-height: 1.5;
+}
+
+h3 {
+  line-height: 1.4;
+}
+
+h4 {
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.resume {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+  margin: 0 auto;
+  max-width: 1200px;
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: none;
+  }
+
+  &__one {
+    .name {
+      padding: 5rem 4rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: rgb(66, 61, 78);
+      color: white;
+
+      h1 {
+        font-size: 3rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+        font-weight: 300;
+        margin-top: 1rem;
+      }
+    }
+
+    .contact {
+      margin: 2rem 4rem;
+
+      p {
+        padding: 3px 0;
+      }
+    }
+
+    .profile {
+      margin: 1rem 4rem;
+
+      p {
+        line-height: 1.5;
+      }
+    }
+
+    .skills {
+      margin: 2rem 4rem;
+
+      li {
+        padding: 3px 0;
+      }
+    }
+  }
+
+  &__two {
+    .experience {
+      margin-top: 9rem;
+
+      @media screen and (max-width: 768px) {
+        margin: 2rem 4rem;
+      }
+
+      li {
+        padding: 3px 0;
+        line-height: 1.5;
+      }
+
+      .job {
+        margin: 1rem 0;
+
+        &__title {
+          padding: 0.2rem 0;
+        }
+
+        &__desc {
+          padding: 0.5rem 0;
+        }
+      }
+    }
+
+    .education {
+      @media screen and (max-width: 768px) {
+        margin: 2rem 4rem;
+      }
+
+      p {
+        line-height: 1.5;
+      }
+    }
+
+    .certification {
+      @media screen and (max-width: 768px) {
+        margin: 2rem 4rem;
+      }
+
+      li {
+        padding: 3px 0;
+        line-height: 1.5;
+      }
+    }
+  }
+}
+
+footer {
+  margin: 0 auto;
+  max-width: 1200px;
+  background-color: rgb(66, 61, 78);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  color: white;
+
+  .img {
+    margin-left: 2rem;
+    display: flex;
+
+    .logo {
+      margin-right: 1rem;
+    }
+
+    .logo-14g {
+      padding: 0 0.2rem;
+      background-color: white;
+    }
+  }
+}
