@@ -7,4 +7,4 @@ The print-name folder contains task 2; a program that prints my name. Completed 
 ## Task 3
 
 The resume folder contains task 3; a html page containing my resume.
-Link to project:
+Link to project: https://ikechukwu-resume.netlify.app/
